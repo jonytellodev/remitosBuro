@@ -5,10 +5,10 @@ import Accordion from 'react-bootstrap/Accordion';
 const TablaTrabajos = () => {
   return (
     <>
-      <section>
-        <h4>Ultimos trabajos</h4>
+      <section className="text-center mt-2">
+        <h4 className="bg-black text-white p-2">LISTADO DE TRABAJOS</h4>
         <Table responsive="md">
-          <thead>
+          <thead className="text-center">
             <tr>
               <th>N° Trabajo</th>
               <th>Operario</th>
@@ -19,7 +19,7 @@ const TablaTrabajos = () => {
               <th>Detalles</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-center">
             <tr>
               <td>#001</td>
               <td>Operario 1</td>

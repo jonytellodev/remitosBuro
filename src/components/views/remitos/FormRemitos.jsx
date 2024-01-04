@@ -1,11 +1,17 @@
 import { Col, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Accordion from 'react-bootstrap/Accordion';
 import "./FormRemitos.css";
 
 const FormRemitos = () => {
   return (
     <>
+     <Accordion defaultActiveKey="0" className="container colorAccordion">
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Nueva orden de trabajo</Accordion.Header>
+        <Accordion.Body>
+          
       <Form className="mt-1 container">
         <Row>
           <Col>
@@ -185,6 +191,9 @@ const FormRemitos = () => {
           Salir
         </Button>
       </section>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
     </>
   );
 };
